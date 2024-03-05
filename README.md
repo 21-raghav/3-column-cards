@@ -35,5 +35,5 @@ Copy the code in your editor OR download the zip file and open index.html
 
 ## Screenshots
 
-![Page Screenshot](./webpage_screenshot.png)
-
+![Page Screenshot 1](./webpage_screenshot_1.png)
+![Page Screenshot 2](./webpage_screenshot_2.png)
