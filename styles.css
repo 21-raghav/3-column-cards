@@ -1,0 +1,141 @@
+html {
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+html *, html *:before, html *:after {
+  box-sizing: border-box;
+}
+html html, html body, html div, html span, html object, html iframe, html figure, html h1, html h2, html h3, html h4, html h5, html h6, html p, html blockquote, html pre, html a, html code, html em, html img, html small, html strike, html strong, html sub, html sup, html tt, html b, html u, html i, html ol, html ul, html li, html fieldset, html form, html label, html table, html caption, html tbody, html tfoot, html thead, html tr, html th, html td, html main, html canvas, html embed, html footer, html header, html nav, html section, html video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+html footer, html header, html nav, html section, html main {
+  display: block;
+}
+html body {
+  line-height: 1;
+}
+html ol, html ul {
+  list-style: none;
+}
+html blockquote, html q {
+  quotes: none;
+}
+html blockquote:before, html blockquote:after, html q:before, html q:after {
+  content: "";
+  content: none;
+}
+html table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 20px;
+  background-color: hsl(0, 0%, 90%);
+}
+@media (min-width: 992px) {
+  .main {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 375px;
+  padding: 32px;
+}
+.section .img-wrapper {
+  width: 80px;
+  line-height: 0;
+}
+.section .img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.section h1 {
+  color: hsl(0, 0%, 90%);
+  font-size: 40px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+}
+.section p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 20px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.section button {
+  width: max-content;
+  padding: 15px 25px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: hsl(0, 0%, 90%);
+  cursor: pointer;
+}
+.section button:hover {
+  outline: 2px solid hsl(0, 0%, 90%);
+}
+.section:nth-of-type(1) {
+  background-color: hsl(31, 77%, 52%);
+}
+.section:nth-of-type(1) button {
+  color: hsl(31, 77%, 52%);
+}
+.section:nth-of-type(1) button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(31, 77%, 52%);
+}
+.section:nth-of-type(2) {
+  background-color: hsl(184, 100%, 22%);
+}
+.section:nth-of-type(2) button {
+  color: hsl(184, 100%, 22%);
+}
+.section:nth-of-type(2) button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(184, 100%, 22%);
+}
+.section:nth-of-type(3) {
+  background-color: hsl(179, 100%, 13%);
+}
+.section:nth-of-type(3) button {
+  color: hsl(179, 100%, 13%);
+}
+.section:nth-of-type(3) button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(179, 100%, 13%);
+}
+
+.hide {
+  display: none;
+}
+
+.expand {
+  max-width: 85%;
+}
+
+/*# sourceMappingURL=styles.css.map */

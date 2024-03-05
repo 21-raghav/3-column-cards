@@ -1,0 +1,105 @@
+@use "reset.sass"
+
+// Colors
+$Neutral: hsl(0, 0%, 90%)
+$Off-White: hsla(0, 0%, 100%, 0.75)
+$Bright-Orange: hsl(31, 77%, 52%)
+$Dark-Cyan: hsl(184, 100%, 22%)
+$Very-Dark-Cyan: hsl(179, 100%, 13%)
+
+// Fonts
+$heading-font: "Big Shoulders Display", sans-serif
+$text-font: "Lexend Deca", sans-serif
+
+html 
+    @include reset.reset
+    font-optical-sizing: auto
+    font-style: normal
+
+.main
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    min-height: 100vh
+    padding: 100px 20px
+    background-color: $Neutral
+    
+    @media (min-width: 992px)
+        flex-direction: row
+        padding: 0
+
+.section
+    display: flex
+    flex-direction: column
+    gap: 22px
+    max-width: 375px
+    padding: 32px
+
+    .img-wrapper 
+        width: 80px
+        line-height: 0
+
+        img 
+            width: 100%
+            height: auto
+
+    h1
+        color: $Neutral
+        font-size: 40px
+        font-family: $heading-font
+        font-weight: 700
+    
+    p 
+        color: $Off-White
+        font-size: 20px
+        font-family: $text-font
+        font-weight: 400
+        line-height: 1.5
+
+    button
+        width: max-content
+        padding: 15px 25px
+        font-family: $text-font
+        font-size: 18px
+        border: none
+        border-radius: 25px
+        background-color: $Neutral
+        cursor: pointer
+
+        &:hover 
+            outline: 2px solid $Neutral 
+        
+    &:nth-of-type(1) 
+        background-color: $Bright-Orange
+
+        button
+            color: $Bright-Orange
+            &:hover 
+                color: $Off-White
+                background-color: $Bright-Orange
+                
+    &:nth-of-type(2) 
+        background-color: $Dark-Cyan
+
+        button
+            color: $Dark-Cyan
+            &:hover 
+                color: $Off-White
+                background-color: $Dark-Cyan
+    
+    &:nth-of-type(3) 
+        background-color: $Very-Dark-Cyan
+
+        button
+            color: $Very-Dark-Cyan
+            &:hover 
+                color: $Off-White
+                background-color: $Very-Dark-Cyan
+
+.hide
+    display: none
+
+.expand
+    max-width: 85%

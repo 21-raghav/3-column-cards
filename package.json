@@ -1,0 +1,14 @@
+{
+  "name": "3-col-car",
+  "version": "1.0.0",
+  "description": "3 column car information component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raghav",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}
